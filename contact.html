@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background: rgb(245, 244, 244);
+        font-family: 'Poppins', sans-serif;
+        ;
+    }
+    
+    .contact-form {
+        background: #fff;
+        margin-top: 5%;
+        width: 70%;
+        margin-bottom: 3%;
+    }
+    
+    .contact-form .form-control {
+        border-radius: 1rem;
+    }
+    
+    .contact-image {
+        text-align: center;
+    }
+    
+    .contact-image img {
+        border-radius: 6rem;
+        width: 11%;
+        margin-top: -3%;
+        transform: rotate(29deg);
+    }
+    
+    .contact-form form {
+        padding: 14%;
+    }
+    
+    .contact-form form .row {
+        margin-bottom: -7%;
+    }
+    
+    .contact-form h3 {
+        margin-bottom: 8%;
+        margin-top: -10%;
+        text-align: center;
+        color: rgb(11, 236, 86);
+    }
+    
+    .contact-form .btnContact {
+        width: 50%;
+        border: none;
+        border-radius: 1rem;
+        padding: 2% 2% 2.5%;
+        background: rgb(11, 236, 86);
+        font-weight: 600;
+        color: #fff;
+        cursor: pointer;
+    }
+    
+    .btnContactSubmit {
+        width: 50%;
+        border-radius: 1rem;
+        padding: 1.5%;
+        color: #fff;
+        background-color: rgb(11, 236, 86);
+        border: none;
+        cursor: pointer;
+    }
+    
+    .container {
+        border-radius: 10px;
+        box-shadow: 15px 15px 15px rgb(175, 174, 174);
+    }
+    
+    .nav {
+        padding: 20px;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    a {
+        color: black;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    
+    a:hover {
+        color: rgb(11, 236, 86);
+        text-decoration: none;
+    }
+</style>
+
+<body>
+    <div class="nav">
+        <nav>
+            <ul id="menuitem">
+                <li><a href="isha.html">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="account.html">Account</a></li>
+
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container contact-form">
+        <form method="post">
+            <h3>Drop Us a Message</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input type="text" name="txtName" class="form-control" placeholder="Your Name *" value="" />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="txtEmail" class="form-control" placeholder="Your Email *" value="" />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="txtPhone" class="form-control" placeholder="Your Phone Number *" value="" />
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" name="btnSubmit" class="btnContact" value="Send Message" />
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <textarea name="txtMsg" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
