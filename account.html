@@ -3,11 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width-device-width,initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
-    <title>fashionstore||E-commerce website Designing</title>
+    <title>Document</title>
+
     <style>
         * {
             margin: 0;
@@ -75,6 +75,7 @@
             align-items: center;
             flex-wrap: wrap;
             justify-content: space-around;
+            overflow: hidden;
         }
         
         .logo img {
@@ -90,7 +91,6 @@
         .background1 img {
             width: 448px;
             padding: 150px 48px;
-            font-family: "roboto", sans-serif;
         }
         
         .background h1 {
@@ -123,6 +123,41 @@
         .footer {
             color: rgb(248, 249, 250);
             background: black;
+        }
+        
+        .form {
+            font-family: "Sofia", sans-serif;
+            text-align: center;
+        }
+        
+        input[type=text],
+        select {
+            width: 100%;
+            padding: 12px 0px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-family: "Sofia", sans-serif;
+            text-align: center;
+        }
+        
+        input[type=submit] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-family: "Sofia", sans-serif;
+        }
+        
+        input[type=submit]:hover {
+            background-color: #45a049;
+            font-family: "Sofia", sans-serif;
         }
         /*------------------   media quary  --------------   */
         
@@ -161,14 +196,14 @@
 
             <div class="navbar">
                 <div class="logo">
-                    <img src="photos\fashion store.gif" width="100px">
+                    <img src="photos\fashion store.gif" alt="Avatar" width="100px">
                 </div>
                 <nav>
                     <ul id="menuitem">
-                        <li><a href="isha.html">Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="#">Products</a></li>
                         <li><a href="./about.html">About</a></li>
-                        <li><a href="account.html">Account</a></li>
+                        <li><a href="#">Account</a></li>
                     </ul>
                 </nav>
                 <img src="photos\pngegg (2).png" width="25px">
@@ -176,69 +211,34 @@
 
             </div>
 
-            <div class="body">
 
-                <div class="background">
-                    <h1>Fashion Store : Online shopping for<br> Fashion & lifestyle </h1>
-                    <p>Online shopping like never before! Get the latest trends.
-                        <br>With the most fashionable range of apparels,accessories and more,,,,,</p>
-                </div>
-                <div class="background1">
-                    <img src="fashion store\bag.jpg">
-                </div>
+
+
+
+
+            <div class="form">
+
+                <h3>Account Login:</h3>
+
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                  <option value="australia">India</option>
+                  <option value="canada">Canada</option>
+                  <option value="usa">USA</option>
+                </select>
+
+                <input type="submit" value="Login">
+                </form>
             </div>
-
         </div>
     </div>
-
-
-
-    <!-----------------brands name--------------------------->
-
-    <div class="row">
-        <div class="col"><img src="photos\IMG-20211028-WA0031.jpg" width="210px"></div>
-        <div class="col"><img src="photos\IMG-20211028-WA0035.jpg" width="210px"></div>
-        <div class="col"><img src="photos\IMG-20211028-WA0042.jpg" width="210px"></div>
-        <div class="col"><img src="photos\IMG-20211028-WA0043.jpg" width="210px"></div>
-        <div class="col"><img src="photos\IMG-20211028-WA0041.jpg" width="210px"></div>
     </div>
-
-
-    <!---------------------------footer------------------------------>
-    <div class="footer">
-        <div class="sec">
-            <h3>Download our App on your Mobile</h3><br>
-            <img src="\photos\app-store-png-logo-33123.png" width="160px">
-
-        </div>
-        <div class="sec"><img src="photos\fashion store.png" width="180px"></div>
-        <div class="sec">
-            <h4>Usefull links</h4>
-            <p>
-                <br> Contact Us<br> FAQ <br> T&C <br> Terms Of Use <br> Track Orders<br> Cancellation
-                <br> Privacy policy</p>
-        </div>
-        <!--<div class="sec"><img src="fashion store\original.jpg" width="50px">100% ORIGINAL guarantee for all products at FashionStore</div>--!>
-
-    </div>
-
-
-    <!------------------------menu toggle using javascriept--------------------->
-        <script>
-            var menuitem = document.getElementById("menuitem");
-
-            menuitem.style.maxHeight = "0px";
-
-            function menutoggle() {
-                if (menuitem.style.maxHeight == "0px") {
-
-                    menuitem.style.maxHeight = "200px"
-                } else {
-
-                    menuitem.style.maxHeight = "0px";
-                }
-            }
-        </script>
 </body>
 
 </html>

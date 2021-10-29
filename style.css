@@ -26,6 +26,10 @@
         font-weight: bold;
     }
     
+    #menuitem h1 {
+        font-size: 1.85rem;
+    }
+    
     .navbar a:hover,
     .navbar li a.active {
         color: rgb(98, 102, 102);
